@@ -9,7 +9,6 @@ import './App.css'
       </div> */
 
 export function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
@@ -20,7 +19,7 @@ export function App() {
         <h3>Etudiant en informatique</h3>
     </div>
       <div id='about'>
-      fe
+      
       </div>
       <div id='project'>
 
