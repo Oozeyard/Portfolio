@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
+import Header from './components/Header/Header'
+import Presentation from './components/Portofolio/Presentation'
+import About from './components/Portofolio/About'
+import Project from './components/Portofolio/Project'
+import Contact from './components/Portofolio/Contact'
 
 /*      <div>    
         <a href="https://reactjs.org" target="_blank">
@@ -12,33 +16,18 @@ export function App() {
 
   return (
     <div className="App">
+      <Header/>
       <h1>Bienvenue</h1>
-      <div className="presentation">
-        <h2>Je m'appelle Mickaël Canhoto <br/>
-        et je construit des choses sur internet</h2>
-        <h3>Etudiant en informatique</h3>
-    </div>
-      <div id='about'>
-      
-      </div>
-      <div id='project'>
+      <Presentation/>
+      <About/>
+      <Project/>
+      <Contact/>
 
-      </div>
-      <div id='contact'>
-
-      </div>
-      <footer></footer>
-      <Panel/>
     </div>
   )
 }
 
-function Panel() {
-  return (
-      <div id="panel">
-        <a href='#about'>A Propos</a>
-        <a href='#project'>Projet</a> 
-        <a href='#contact'>Contact</a>
-      </div>
-  )
+export function Show() {
+  const Slide = ['About', 'Project'];
+  console.log("About");
 }
