@@ -5,8 +5,10 @@ import TSicon from "../../assets/ts.svg"
 
 export default function Contact() {
     return(
-        <div id="made">
+        <div id="skill">
             <hr/> <br/>
+            <h2>Je Maîtrise</h2>
+            <br/>
             Le Site a été crée avec : <br/>
             <a href="https://fr.reactjs.org">
             <img src={Reacticon}></img>

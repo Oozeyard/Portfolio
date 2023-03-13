@@ -18,7 +18,7 @@ export default function Project() {
 
     // show Univ if true and Perso if true
     return (
-        <div id="Project">
+        <div id="project">
             <hr/><h3>Mes Projets</h3>  <br/>
         <button onClick={handleUniv}>Universitaire</button>
         <button onClick={handlePerso}>Personnel</button>

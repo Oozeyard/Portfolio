@@ -1,22 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import Header from './components/Header/Header'
+import Sidebar from './components/Sidebar/Sidebar'
 import Presentation from './components/Portofolio/Presentation'
-import Made from './components/Portofolio/Made'
+import Skill from './components/Portofolio/Skill'
 import Project from './components/Portofolio/Project'
 import Contact from './components/Portofolio/Contact'
 
 export function App() {
 
   return (
-    <div className="App">
-      <Header/>
+    <div id="main">
+    <Sidebar/>
+    <div id="App">
       <h1>Bienvenue</h1>
       <Presentation/>
       <Project/>
-      <Made/>
+      <Skill/>
       <Contact/>
-
+    </div>
     </div>
   )
 }
