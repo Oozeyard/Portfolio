@@ -8,23 +8,21 @@ import skillSVG from '../../assets/skill.svg'
 
 export default function Header() {
     return (
-      <div id="Sidebar" onMouseEnter={() => toggleSidebar(true)} onMouseLeave={() => toggleSidebar(false)}>
-      <a href="#presentation"><img src={presentationSVG}></img>Présentation</a><br/>
-      <a href="#project"><img src={projectSVG}></img>Projets</a><br/>
-      <a href="#skill"><img src={skillSVG}></img>Compétences</a><br/>
-      <a href="#contact"><img src={contactSVG}></img>Contact</a>
+      <div id="sidebar" onMouseEnter={() => toggleSidebar(true)} onMouseLeave={() => toggleSidebar(false)}>
+      <a href="#presentation"><img src={presentationSVG}></img><span>Présentation</span></a><br/>
+      <a href="#project"><img src={projectSVG}></img><span>Projets</span></a><br/>
+      <a href="#skill"><img src={skillSVG}></img><span>Compétences</span></a><br/>
+      <a href="#contact"><img src={contactSVG}></img><span>Contact</span></a>
     </div>
     )
   }
 
 function toggleSidebar(bool : boolean) {
   if (bool) {
-      console.log("opening sidebar");
-      document.getElementById("Sidebar")!.style.width = "250px";
-      document.getElementById("App")!.style.marginLeft = "250px";
+      document.getElementById("sidebar")!.style.width = "200px";
+      document.getElementById("App")!.style.marginLeft = "200px";
   } else {
-      console.log("closing sidebar");
-      document.getElementById("Sidebar")!.style.width = "85px";
-      document.getElementById("App")!.style.marginLeft = "85px";
+      document.getElementById("sidebar")!.style.width = "65px";
+      document.getElementById("App")!.style.marginLeft = "65px";
   }
 }
