@@ -19,10 +19,10 @@ export default function Header() {
 
 function toggleSidebar(bool : boolean) {
   if (bool) {
-      document.getElementById("sidebar")!.style.width = "200px";
-      document.getElementById("App")!.style.marginLeft = "200px";
+      document.getElementById("sidebar")!.style.width = "12rem";
+      document.getElementById("App")!.style.marginLeft = "12rem";
   } else {
-      document.getElementById("sidebar")!.style.width = "65px";
-      document.getElementById("App")!.style.marginLeft = "65px";
+      document.getElementById("sidebar")!.style.width = "3.6rem";
+      document.getElementById("App")!.style.marginLeft = "3.6rem";
   }
 }

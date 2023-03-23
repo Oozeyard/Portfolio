@@ -1,6 +1,6 @@
 #sidebar {
   height: 100%;
-  width: 65px;
+  width: 3.6rem;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -8,9 +8,9 @@
   background-color: #19161b;
   transition: 0.5s;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 3.6rem;
   white-space: nowrap;
-  padding-left: 10px;
+  padding-left: 1rem;
 }
 
 #sidebar a {
@@ -30,24 +30,15 @@
 }
 
 #App {
-  padding: 16px;
-  margin-left: 85px;
+  padding: 1rem;
+  margin-left: 5rem;
   transition: margin-left 0.5s;
-}
-
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
-  }
-  .sidebar a {
-    font-size: 18px;
-  }
 }
 
   #sidebar img {
     vertical-align: middle;
-    padding-bottom: 3px;
-    margin-right: 30px;
+    padding-bottom: 0.5rem;
+    margin-right: 1rem;
     filter: invert(70%);
   }
   

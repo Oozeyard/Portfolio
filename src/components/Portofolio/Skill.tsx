@@ -10,17 +10,26 @@ export default function Contact() {
             <h2>Je Maîtrise</h2>
             <br/>
             Le Site a été crée avec : <br/>
+            <div className="grid">
             <a href="https://fr.reactjs.org">
             <img src={Reacticon}></img>
-            </a>
+            </a> </div>
+            <div className="grid">
             <a href="https://vitejs.dev/">
             <img src={Viteicon}></img>
-            </a>
+            </a> </div>
+            <div className="grid">
             <a href="https://www.typescriptlang.org/">
             <img src={TSicon}></img>
-            </a>
+            </a> </div> 
             <br/>
-            React Vite Typescript
+            Mais aussi : <br/>
+            <div className="grid">C / C++</div>
+            <div className="grid">Java</div>
+            <div className="grid">Python</div>
+            <div className="grid">SQL</div>
+            <br/>
+            <br/>
             <hr/>
         </div>
     )

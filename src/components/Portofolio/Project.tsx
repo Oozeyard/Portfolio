@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react";
 import line from '../../assets/line.svg'
+import './portofolio.css'
 
 export default function Project() {
     // Booleans
@@ -9,6 +10,7 @@ export default function Project() {
     const handleUniv = () => {
         if (Perso == true) setPerso(false);
         setUniv(current => !current);
+
     }
     // same for perso
     const handlePerso = () => {
@@ -20,33 +22,30 @@ export default function Project() {
     return (
         <div id="project">
             <hr/><h3>Mes Projets</h3>  <br/>
+        <div id="pblock">
         <button onClick={handleUniv}>Universitaire</button>
         <button onClick={handlePerso}>Personnel</button>
-        {Univ && (
-            <table>
-                <tr>
-                    <td>Betterfood</td>
-                    <td>DataViz</td>
-                </tr>
-                <tr>
-                    <td>EDP</td>
-                    <td>Graphe</td>
-                </tr>
-                <tr>
-                    <td>C</td>
-                    <td>Web</td>
-                </tr>
-            </table>
+        <div id="container">
+        {Univ &&  (
+        <div className="Project"> 
+            <div className="grid">BetterFood</div>
+            <div className="grid">DataViz</div>
+            <div className="grid">EDP</div>
+            <div className="grid">Graphe</div>
+            <div className="grid">C</div>
+            <div className="grid">Web</div>
+        </div>
         )}
-        {Perso && (
-            <table>
-                <tr>
-                    <td>Portfolio</td>
-                    <td>Advent of code</td>
-                </tr>
-                    <td>Python</td>
-            </table>
-        )}
+        {Perso && 
+        <div className="Project">
+            <div className="grid">Portofolio</div>
+            <div className="grid">Advent of code</div>
+            <div className="grid">Lua</div>
+            <div className="grid">Python</div>
+        </div>
+        }
+        </div>
+        </div>
         </div>
     )
 }
