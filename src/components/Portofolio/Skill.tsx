@@ -28,8 +28,6 @@ export default function Contact() {
             <div className="grid">Java</div>
             <div className="grid">Python</div>
             <div className="grid">SQL</div>
-            <br/>
-            <br/>
             <hr/>
         </div>
     )
